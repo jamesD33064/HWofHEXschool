@@ -9,6 +9,14 @@
 <body>
     <div class="wrapper">
         <div class="content">
+            <div class="navbartop">
+                <span style="float: right;">
+                    <ul class="navtop_li_padding">
+                        <li class="navtop_li"><a href="#"><img src="./img/facebookIcon.png"><p>粉絲團</p></a></li>
+                        <li class="navtop_li"><a href="#"><img src="./img/twitterIcon.png"><p>追蹤我們</p></a></li>
+                    </ul>
+                </span>
+            </div>
             <div class="navbar">
                 <span class="nav_content_center">
                     <img src="./img/logo.png">
@@ -37,45 +45,50 @@
             </div>
 
             <div id="block1" class="contentblock">
-                <div class="card">
-                    <img src="./img/html.png" class="cardimg">
-                    <div class="container">
-                        <h2>HTML5 基礎教學</h2>
-                        <p>主流前端網站設計的基礎就在六角學院，在這裡不再是填鴨式教育，而是透過實際的範例，了解正確的網站開發流程，講師均具有業界開發經驗，讓學員學習業界主流的開發方法。</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="./img/rwd.png" class="cardimg">
-                    <div class="container">
-                        <h2>響應式網站設計</h2>
-                        <p>響 應 式 網 站 設 計(Responsive web design)，目前大多使用者均是以手機瀏覽的情況下，響應式網站已經是必備的。六角學院將會提供業界響應式開發方法。讓學生了解行動版開發技巧。</p>    
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="./img/jQuery.png" class="cardimg">
-                    <div class="container">
-                        <h2>jQuery 實戰教學</h2>
-                        <p>本課程具有以下特色</p>
-                        <ul class="jqueryul">
-                            <li><p>了解變數的使用方法</p></li>
-                            <li><p>學習並操作DOM</p></li>
-                            <li><p>學習基本數學運算方法</p></li>
-                            <li><p>套件的操作及運用</p></li>
-                        </ul>
-                    </div>
-                </div>
+                <ul class="block1_ul">
+                    <li>
+                        <div class="card">
+                            <img src="./img/html.png" class="cardimg">
+                            <h2>HTML5 基礎教學</h2>
+                            <p>主流前端網站設計的基礎就在六角學院，在這裡不再是填鴨式教育，而是透過實際的範例，了解正確的網站開發流程，講師均具有業界開發經驗，讓學員學習業界主流的開發方法。</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <img src="./img/rwd.png" class="cardimg">
+                            <h2>響應式網站設計</h2>
+                            <p>響 應 式 網 站 設 計(Responsive web design)，目前大多使用者均是以手機瀏覽的情況下，響應式網站已經是必備的。六角學院將會提供業界響應式開發方法。讓學生了解行動版開發技巧。</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <img src="./img/jQuery.png" class="cardimg">
+                            <h2>jQuery 實戰教學</h2>
+                            <p>本課程具有以下特色</p>
+                            <ul class="jqueryul">
+                                <li><p>了解變數的使用方法</p></li>
+                                <li><p>學習並操作DOM</p></li>
+                                <li><p>學習基本數學運算方法</p></li>
+                                <li><p>套件的操作及運用</p></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+
+
             </div>
 
             <div id="block2" class="contentblock">
                 <div class="container">
                     <h2>線上及實體課程的差異</h2>
-                    <table>
+                    <table rules="rows">
                         <thead>
-                            <tr>
+                            <tr></tr>
+                            <tr style="font-weight: 600;">
                                 <td>項目</td>
                                 <td>Hex School 線上課程</td>
                                 <td>一般線上課程</td>
-                                <td>實體課程</td>
+                                <td class="td_last">實體課程</td>
                             </tr>
                         </thead>
                         <tbody>
@@ -115,6 +128,7 @@
                                 <td>不一定</td>
                                 <td>板書</td>
                             </tr>
+                            <tr></tr>
                         </tbody>
                     </table>
                 </div>
