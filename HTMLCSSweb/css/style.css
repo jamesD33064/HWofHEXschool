@@ -57,11 +57,14 @@ html, body {
     width: 100%;
     padding-bottom: 50px; /*避免文字超出瀏覽器時，內容區塊不會和footer打架*/
 }
+.border-radius{
+    border-radius: 6px
+}
 
 /*---------------------------------------- nav ----------------------------------------*/
 .navbartop{
     height: 30px;
-    background-color: rgba(203, 203, 203, 0.45);
+    background-color: #f6f6f6;
 }
 .navbar{
     height: 62px;
@@ -81,7 +84,7 @@ html, body {
     padding: 0.8em 2em;
 }
 .nav_li>a{
-    color: rgb(14, 211, 135);
+    color: #00cc99;
     text-decoration:none;
 }
 .nav_li>a:hover{
@@ -92,7 +95,7 @@ html, body {
     transform:translate(0px, 22px);
     height: 4px;
     width: 100%;
-    background-color: rgb(14, 211, 135);
+    background-color: #00cc99;
 }
 .blockmarginbuttom{
     margin-bottom: 7vw;
@@ -170,7 +173,7 @@ html, body {
 }
 
 /*---------------------------------------- block 2 ----------------------------------------*/
-.block2_title{
+#block2_title{
     align-self: center; 
     justify-self: center;
     font-size: 2em;
@@ -180,9 +183,6 @@ html, body {
     align-self: center; 
     justify-self: center;
     width: 80%;
-    line-height: 2em;
-    font-size: 1.25em;
-    text-align: left;
 }
 .block2_table_thead{
     font-weight: 500;
@@ -194,22 +194,90 @@ html, body {
 .block2_table tr{
     border-top:1px #cbcbcb solid;border-bottom:1px #cbcbcb solid;
 }
+.block2_table td{
+    text-align: left;
+    line-height: 2em;
+    font-size: 1.25em;
+}
+.block2_table h3 ,.block2_table p {
+    margin-left: 1.5em;
+}
 .wordGreen{
-    color: rgb(14, 211, 135);
+    color: #00cc99;
 }
-/* .td_4{
-    width: 15%;
-} */
-/*---------------------------------------- block 3 ----------------------------------------*/
-#block3{
-    background: linear-gradient(rgb(27, 67, 27), rgb(14, 211, 135));
-}
-#block3_title{
-    color: white;
+.td_2{
+    width: 30%;
 }
 
+/*---------------------------------------- block 3 ----------------------------------------*/
+#block3{
+    background: linear-gradient(#01644b,#009671);
+}
+#block3_title{
+    font-size: 2em;
+    color: white;
+    padding: 1em;
+    letter-spacing: 0.1em;
+    line-height: 1.5em;
+}
+.block3_form{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    margin-bottom: 2vw;
+}
+#block3_from_textarea{
+    align-self: center; 
+    justify-self: center;
+    width:90%;
+    height: 100%;
+}
+.block3_form_inputdiv{
+    margin-bottom: 3%;
+}
+.block3_form_inputdiv label{
+    display: block;
+    color: white;
+    font-size: 1.25em;
+    font-weight: 500;
+    text-align: left;
+    margin-left: 5%;
+    margin-bottom: 5px;
+}
+.block3_form_inputdiv input{
+    width: 90%;
+    height: 35px;
+}
+
+#block3_form_subbmit{
+    border:0 none;
+    cursor:pointer;
+    background-color: #00cc99;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 300;
+    width: 90px;
+    height: 40px;
+    float: right;
+    margin-right: 5%;
+}
+
+/*---------------------------------------- footer ----------------------------------------*/
 .footer{
-    height: 50px; /*設定footer本身高度*/
+    height: 7vw; /*設定footer本身高度*/
+    padding: 2vw;
+}
+.footer_word_red{
+    color: red;
+}
+#footerimg{
+    width: 17%;
+}
+#footerword{
+    letter-spacing: 0.1em;
+    line-height: 1.5em;
+    float:right;
+    text-align:left;
+    font-size: 1.1em;
 }
 
 

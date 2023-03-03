@@ -46,21 +46,21 @@
 
             <div id="block1" class="contentblock blockmarginbuttom">
                 <ul class="block1_ul">
-                    <li class="card">
+                    <li class="card border-radius">
                         <img src="./img/html.png" class="cardimg">
                         <div class="block1_ul_content">
                             <h2 class="block1_ul_title">Html 5 基礎教學</h2>
                             <p>主流前端網站設計的基礎就在六角學院，在這裡不再是填鴨式教育，而是透過實際的範例，了解正確的網站開發流程，講師均具有業界開發經驗，讓學員學習業界主流的開發方法。</p>
                         </div>
                     </li>
-                    <li class="card">
+                    <li class="card border-radius">
                         <img src="./img/rwd.png" class="cardimg">
                         <div class="block1_ul_content">
                             <h2 class="block1_ul_title">響應式網站設計</h2>
                             <p>響 應 式 網 站 設 計(Responsive web design)，目前大多使用者均是以手機瀏覽的情況下，響應式網站已經是必備的。六角學院將會提供業界響應式開發方法。讓學生了解行動版開發技巧。</p>
                         </div>
                     </li>
-                    <li class="card">
+                    <li class="card border-radius">
                         <img src="./img/jQuery.png" class="cardimg">
                         <div class="block1_ul_content">
                             <h2 class="block1_ul_title">jQuery 實戰教學</h2>
@@ -77,70 +77,88 @@
             </div>
 
             <div id="block2" class="contentblock blockmarginbuttom">
-                <h1 class="block2_title">線上及實體課程的差異</h1>
+                <h1 id="block2_title">線上及實體課程的差異</h1>
                 <table class="block2_table">
                     <thead class="block2_table_thead">
                         <tr>
-                            <td>項目</td>
-                            <td>Hex School 線上課程</td>
-                            <td>一般線上課程</td>
-                            <td class="td_4">實體課程</td>
+                            <td><h3>項目</h3></td>
+                            <td class="td_2"><h3>Hex School 線上課程</h3></td>
+                            <td><h3>一般線上課程</h3></td>
+                            <td class="td_4"><h3>實體課程</h3></td>
                         </tr>
                     </thead>
                     <tbody class="block2_table_tbody">
                         <tr>
-                            <td>費用</td>
-                            <td class="wordGreen">較低</td>
-                            <td class="wordGreen">較低</td>
-                            <td>較高</td>
+                            <td><p>費用</p></td>
+                            <td class="wordGreen"><p>較低</p></td>
+                            <td class="wordGreen"><p>較低</p></td>
+                            <td><p>較高</p></td>
                         </tr>
                         <tr>
-                            <td>學習效果</td>
-                            <td>一般</td>
-                            <td class="wordGreen">較低</td>
-                            <td class="wordGreen">很好</td>
+                            <td><p>學習效果</p></td>
+                            <td><p>一般</p></td>
+                            <td class="wordGreen"><p>較低</p></td>
+                            <td class="wordGreen"><p>很好</p></td>
                         </tr>
                         <tr>
-                            <td>Code Review</td>
-                            <td class="wordGreen">有</td>
-                            <td>無</td>
-                            <td>不一定</td>
+                            <td><p>Code Review</p></td>
+                            <td class="wordGreen"><p>有</p></td>
+                            <td><p>無</p></td>
+                            <td><p>不一定</p></td>
                         </tr>
                         <tr>
-                            <td>課程更新進度</td>
-                            <td class="wordGreen">普通</td>
-                            <td class="wordGreen">普通</td>
-                            <td>較慢</td>
+                            <td><p>課程更新進度</p></td>
+                            <td class="wordGreen"><p>普通</p></td>
+                            <td class="wordGreen"><p>普通</p></td>
+                            <td><p>較慢</p></td>
                         </tr>
                         <tr>
-                            <td>多次複習</td>
-                            <td class="wordGreen">可</td>
-                            <td>可</td>
-                            <td>不可</td>
+                            <td><p>多次複習</p></td>
+                            <td class="wordGreen"><p>可</p></td>
+                            <td><p>可</p></td>
+                            <td><p>不可</p></td>
                         </tr>
                         <tr>
-                            <td>字幕</td>
-                            <td class="wordGreen">有</td>
-                            <td>不一定</td>
-                            <td>板書</td>
+                            <td><p>字幕</p></td>
+                            <td class="wordGreen"><p>有</p></td>
+                            <td><p>不一定</p></td>
+                            <td><p>板書</p></td>
                         </tr>
                     </tbody>
                 </table>
             </div>
             
-            <div id="block3" class="contentblock blockmarginbuttom">
+            <div id="block3" class="contentblock ">
                 <h1 id="block3_title">對我們課程有興趣嗎？<br>歡迎留下您的資料</h1>
-                <div>
-                    <textarea name="mytext" rows="6" cols="40" required></textarea>
-                </div>
+                <form action="" class="block3_form">
+                    <textarea id="block3_from_textarea" class="border-radius" name="" rows="" cols="" required></textarea>
+                    <div>
+                        <div class="block3_form_inputdiv">
+                            <label for="name">姓名</label>
+                            <input class="border-radius" type="text" name="name" placeholder="六角講師" required>
+                        </div>
+                        <div class="block3_form_inputdiv">
+                            <label for="phone">電話</label>
+                            <input class="border-radius" type="text" name="phone" placeholder="0912345678" required>
+                        </div>
+                        <div class="block3_form_inputdiv">
+                            <label for="email">信箱</label>
+                            <input class="border-radius" type="email" name="email" placeholder="hexschool@gmail.com" required>
+                        </div>
+                        <div >
+                            <input id="block3_form_subbmit" class="border-radius" type="submit" value="送出">
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>    <!-- content -->
     </div>    <!-- wrapper -->
 
     <footer class="footer">
-        <img src="./img/footerLogo.png" alt="footerLogo" style="float:left;">
-        <div style="float:right; text-align:left;">
-            <p>聯絡我們：hexschool@gmail.com<br>電話：0999123456</p>
+        <img id="footerimg" src="./img/footerLogo.png" alt="footerLogo" style="float:left;">
+        <div id="footerword">
+            <p>聯絡我們：<span class="footer_word_red">hexschool@gmail.com</span></p>
+            <p>電話：<span class="footer_word_red">0999123456</span></p>
         </div>
     </footer>
 
