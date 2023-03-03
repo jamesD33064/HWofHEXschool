@@ -60,24 +60,44 @@ html, body {
 .border-radius{
     border-radius: 6px
 }
+.blockmarginbuttom{
+    margin-bottom: 7vw;
+}
+.contentblock{
+    text-align: center;
+    display: grid;
+}
 
-/*---------------------------------------- nav ----------------------------------------*/
+/*---------------------------------------- navtop ----------------------------------------*/
 .navbartop{
     height: 30px;
     background-color: #f6f6f6;
+    display: grid;
 }
+.navtop_ul{
+    display: grid;
+    grid-template-columns: repeat(2, 120px);
+    justify-content: end;
+    align-items: center; 
+}
+.navtop_li{
+    margin: auto;
+    display: grid;
+}
+.navtop_li_a{
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+.navtop_li_a *{
+    padding: 0 8px;
+}
+/*---------------------------------------- nav ----------------------------------------*/
 .navbar{
     height: 62px;
-}
-.navbar *, .navbartop *{
-    display: inline;
 }
 .nav_content_center > ul{
     display: flex;
     align-items: center;
-}
-.navtop_li_padding > li{
-    padding: 0px 0.5em;
 }
 .nav_li_padding > li{
     font-size: 1.25em;
@@ -96,9 +116,6 @@ html, body {
     height: 4px;
     width: 100%;
     background-color: #00cc99;
-}
-.blockmarginbuttom{
-    margin-bottom: 7vw;
 }
 
 /*---------------------------------------- front img ----------------------------------------*/
@@ -126,10 +143,6 @@ html, body {
     padding: 4%;
     font-size: 4em;
     font-weight: 400;
-}
-.contentblock{
-    text-align: center;
-    display: grid;
 }
 
 /*---------------------------------------- block 1 ----------------------------------------*/
