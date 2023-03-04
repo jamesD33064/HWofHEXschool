@@ -151,7 +151,6 @@ html, body {
     justify-self: center;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: minmax(100px, auto);
 }
 .card {
     align-self: center; 
@@ -159,7 +158,8 @@ html, body {
     display: grid;
     grid-auto-rows: 50%;
     width: 75%;
-    height: 85%;
+    height: 90%;
+    /* height: auto; */
     padding: 40px 20px ;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
@@ -183,6 +183,39 @@ html, body {
 .jqueryul>li{
     margin-left: 1em;
     list-style-type:disc;
+}
+.block1_ul_content_hovercontent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(31, 31, 31, 0.85);
+    height: 200%;
+    width: 100%;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: all 0.3s ease;
+    cursor:pointer;
+}
+.block1_ul_content_hovercontent *{
+    transform: translateY(-70px);
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+.block1_ul_content_hovercontent > h2{
+    color: white;
+    font-size: 2.5em;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    line-height: 1.5em;
+}
+.card:hover .block1_ul_content_hovercontent{
+    opacity: 1;
+}
+
+.card:hover .block1_ul_content_hovercontent *{
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /*---------------------------------------- block 2 ----------------------------------------*/
