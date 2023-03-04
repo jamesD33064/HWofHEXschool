@@ -106,6 +106,7 @@ html, body {
 .nav_li>a{
     color: #00cc99;
     text-decoration:none;
+    cursor:pointer;
 }
 .underline{
     opacity: 1;
@@ -165,7 +166,6 @@ html, body {
     grid-auto-rows: 50%;
     width: 75%;
     height: 90%;
-    /* height: auto; */
     padding: 40px 20px ;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
@@ -269,11 +269,18 @@ html, body {
     background: linear-gradient(#01644b,#009671);
 }
 #block3_title{
+    align-self: center; 
+    justify-self: center;
+    width:fit-content;
     font-size: 2em;
     color: white;
     padding: 1em;
     letter-spacing: 0.1em;
     line-height: 1.5em;
+}
+#block3_title:hover .crook{
+    font-style: oblique;
+    transition: all 0.1s ease;
 }
 .block3_form{
     display: grid;

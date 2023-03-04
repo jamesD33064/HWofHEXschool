@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>index</title>
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
     <title>Hex School</title>
     <meta charset="utf-8">
     <!-- script -->
     <script src="./js/jquery-3.6.3.min.js"></script>
     <!-- css -->
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/component/component.css">
     <link href="./css/lightbox/lightbox.css" rel="stylesheet" />
 </head>
 <body>
@@ -27,22 +27,20 @@
                 </span>
                 <span style="float: right;" class="nav_content_center">
                     <ul class="nav_li_padding">
-                        <li class="nav_li"><a href="#block1">
+                        <li class="nav_li"><a>
                             <h3>首頁</h3><div class="underline"></div>
                         </a></li>
-                        <li class="nav_li"><a href="#block2">
+                        <li class="nav_li" id="nav_li_intro"><a>
                             <h3>產品介紹</h3><div class="underline"></div>
                         </a></li>
-                        <li class="nav_li"><a href="#block3">
+                        <li class="nav_li" id="nav_li_conn"><a>
                             <h3>聯絡我們</h3><div class="underline"></div>
                         </a></li>
                     </ul>
                 </span>
             </div>
 
-            <swiper-container class="blockmarginbuttom" navigation="true" pagination="true">
-                <!-- <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div> -->
+            <swiper-container class="blockmarginbuttom" pagination="true" rewind="true" >
                 <swiper-slide>
                     <div class="frontIMG">
                         <img src="./img/banner.png" width="100%">
@@ -54,21 +52,21 @@
                     <div class="frontIMG">
                         <img src="./img/banner.png" width="100%">
                         <div class="frontWord-bg"></div>
-                        <h1 class="frontWord">六角學院<br>讓您奠定良好的前端基礎</h1>
+                        <h1 class="frontWord">五角學院<br>讓您奠定良好的前端基礎</h1>
                     </div>
                 </swiper-slide>
                 <swiper-slide>
                     <div class="frontIMG">
                         <img src="./img/banner.png" width="100%">
                         <div class="frontWord-bg"></div>
-                        <h1 class="frontWord">六角學院<br>讓您奠定良好的前端基礎</h1>
+                        <h1 class="frontWord">四角學院<br>讓您奠定良好的前端基礎</h1>
                     </div>
                 </swiper-slide>
                 <swiper-slide>
                     <div class="frontIMG">
                         <img src="./img/banner.png" width="100%">
                         <div class="frontWord-bg"></div>
-                        <h1 class="frontWord">六角學院<br>讓您奠定良好的前端基礎</h1>
+                        <h1 class="frontWord">三角學院<br>讓您奠定良好的前端基礎</h1>
                     </div>
                 </swiper-slide>
             </swiper-container>
@@ -82,7 +80,7 @@
                             <p>主流前端網站設計的基礎就在六角學院，在這裡不再是填鴨式教育，而是透過實際的範例，了解正確的網站開發流程，講師均具有業界開發經驗，讓學員學習業界主流的開發方法。</p>
                         </div>
                         <a href="./img/html.png" data-lightbox="block1_cardimggroup">
-                            <div class="block1_ul_content_hovercontent border-radius"><h2>Learn more</h2></div>
+                            <div class="block1_ul_content_hovercontent border-radius"><h2>Learn More</h2></div>
                         </a>
                     </li>
                     <li class="card border-radius">
@@ -92,7 +90,7 @@
                             <p>響 應 式 網 站 設 計(Responsive web design)，目前大多使用者均是以手機瀏覽的情況下，響應式網站已經是必備的。六角學院將會提供業界響應式開發方法。讓學生了解行動版開發技巧。</p>
                         </div>
                         <a href="./img/rwd.png" data-lightbox="block1_cardimggroup">
-                            <div class="block1_ul_content_hovercontent border-radius"><h2>Learn more</h2></div>
+                            <div class="block1_ul_content_hovercontent border-radius"><h2>Learn More</h2></div>
                         </a>
                     </li>
                     <li class="card border-radius">
@@ -108,7 +106,7 @@
                             </ul>
                         </div>
                         <a href="./img/jQuery.png" data-lightbox="block1_cardimggroup">
-                            <div class="block1_ul_content_hovercontent border-radius"><h2>Learn more</h2></div>
+                            <div class="block1_ul_content_hovercontent border-radius"><h2>Learn More</h2></div>
                         </a>
                     </li>
                 </ul>
@@ -167,7 +165,7 @@
             </div>
             
             <div id="block3" class="contentblock ">
-                <h1 id="block3_title">對我們課程有興趣嗎？<br>歡迎留下您的資料</h1>
+                <h1 id="block3_title">對我們課程有興趣嗎<span class="crook">？</span><br>歡迎留下您的資料</h1>
                 <form action="" class="block3_form">
                     <textarea id="block3_from_textarea" class="border-radius" name="" rows="" cols="" required></textarea>
                     <div>
@@ -200,11 +198,16 @@
         </div>
     </footer>
 
+    <div class="totop">
+        <img src="./img/top.png" alt="">
+    </div>
+
     <!-- /*---------------------------------------- script ----------------------------------------*/ -->
-    <script src="./js/app.js"></script>
     <!-- lightbox -->
     <script src="./js/lightbox/lightbox.js"></script>
     <!-- swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    <!-- app.js -->
+    <script src="./js/app.js"></script>
 </body>
 </html>

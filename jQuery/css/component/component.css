@@ -1,0 +1,11 @@
+/*---------------------------------------- to top ----------------------------------------*/
+.totop{
+    position: fixed;
+    bottom: 1vh;
+    right: 1vw;
+    z-index:1
+}
+.totop img{
+    width: 5vw;
+    cursor:pointer;
+}
