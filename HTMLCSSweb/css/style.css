@@ -215,7 +215,7 @@ html, body {
     letter-spacing: 0.1em;
     line-height: 1.5em;
 }
-.card:hover .block1_ul_content_hovercontent{
+.card:hover > .block1_ul_content_hovercontent{
     opacity: 1;
 }
 
@@ -311,6 +311,9 @@ html, body {
     height: 40px;
     float: right;
     margin-right: 5%;
+}
+#block3_form_subbmit:hover{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 /*---------------------------------------- footer ----------------------------------------*/
