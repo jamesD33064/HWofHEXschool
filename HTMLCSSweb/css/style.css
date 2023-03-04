@@ -58,7 +58,7 @@ html, body {
     padding-bottom: 50px; /*避免文字超出瀏覽器時，內容區塊不會和footer打架*/
 }
 .border-radius{
-    border-radius: 6px
+    border-radius: 5px
 }
 .blockmarginbuttom{
     margin-bottom: 7vw;
@@ -107,11 +107,17 @@ html, body {
     color: #00cc99;
     text-decoration:none;
 }
+.underline{
+    opacity: 1;
+    height: 4px;
+    width: 100%;
+}
 .nav_li>a:hover{
     color: rgb(161, 223, 199);
 }
-.underline{
-    display: block;
+.nav_li>a:hover .underline{
+    opacity: 1;
+    transition: all 0.1s ease;
     transform:translate(0px, 22px);
     height: 4px;
     width: 100%;
