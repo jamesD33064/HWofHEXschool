@@ -169,6 +169,9 @@ html, body {
     padding: 40px 20px ;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
+.card a{
+    text-decoration:none;
+}
 .cardimg{
     align-self: center; 
     justify-self: center;
@@ -215,7 +218,7 @@ html, body {
     letter-spacing: 0.1em;
     line-height: 1.5em;
 }
-.card:hover > .block1_ul_content_hovercontent{
+.card:hover .block1_ul_content_hovercontent{
     opacity: 1;
 }
 
