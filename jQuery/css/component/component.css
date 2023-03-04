@@ -13,7 +13,7 @@
 /*---------------------------------------- dropdwon menu ----------------------------------------*/
 .dropdownmenu{
     transform:translate(0px, 2px);
-    width: fit-content;
+    width: 10vw;
     background-color: white;
     display: grid;
     position: absolute;
@@ -23,13 +23,14 @@
     width: 100%;
     display: grid;
     color: black;
-    height: 2em;
+    height: 3em;
     font-size: 0.8em;
     letter-spacing: 0.1em;
     line-height: 1.5em;
 }
 .dropdownmenu_item > p{
     margin: 0 1em;
+    align-self: center;
 }
 .dropdownmenu_item:hover{
     width: 100%;

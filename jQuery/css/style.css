@@ -100,7 +100,7 @@ html, body {
     display: flex;
     align-items: center;
 }
-.nav_li_padding > li{
+.nav_li{
     font-size: 1.25em;
     padding: 0.8em 2em;
 }
@@ -108,6 +108,13 @@ html, body {
     color: #00cc99;
     text-decoration:none;
     cursor:pointer;
+}
+.nav_li_title{
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+}
+.nav_li_title *{
+    display: inline;
 }
 .underline{
     opacity: 1;

@@ -13,7 +13,8 @@ $(document).ready(function(){
                 }
             }
         );
-        rotate+=180;
+        if(rotate==0)rotate = 180;
+        else rotate = 0;
     });
 
     /*---------------------------------------- to top ----------------------------------------*/
@@ -28,4 +29,4 @@ $(document).ready(function(){
 
 // swiper-container auto next
 const swiper = document.querySelector('swiper-container').swiper;
-setInterval(function(){swiper.slideNext();}, 4000);
+setInterval(function(){swiper.slideNext();}, 5000);
