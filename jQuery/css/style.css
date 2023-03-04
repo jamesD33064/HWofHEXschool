@@ -1,0 +1,338 @@
+
+/*---------------------------------------- css reset ----------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*---------------------------------------- wrapper set ----------------------------------------*/
+html, body {
+    height: 100%; /*外層高度100%*/
+    margin: 0;
+}
+.wrapper {
+    width: 100%;
+    min-height: 100%; /*外層高度100%*/
+}
+.contant{
+    width: 100%;
+    padding-bottom: 50px; /*避免文字超出瀏覽器時，內容區塊不會和footer打架*/
+}
+.border-radius{
+    border-radius: 5px
+}
+.blockmarginbuttom{
+    margin-bottom: 7vw;
+}
+.contentblock{
+    text-align: center;
+    display: grid;
+}
+
+/*---------------------------------------- navtop ----------------------------------------*/
+.navbartop{
+    height: 30px;
+    background-color: #f6f6f6;
+    display: grid;
+}
+.navtop_ul{
+    display: grid;
+    grid-template-columns: repeat(2, 120px);
+    justify-content: end;
+    align-items: center; 
+}
+.navtop_li{
+    margin: auto;
+    display: grid;
+}
+.navtop_li_a{
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+.navtop_li_a *{
+    padding: 0 8px;
+}
+/*---------------------------------------- nav ----------------------------------------*/
+.navbar{
+    height: 62px;
+}
+.nav_content_center > ul{
+    display: flex;
+    align-items: center;
+}
+.nav_li_padding > li{
+    font-size: 1.25em;
+    padding: 0.8em 2em;
+}
+.nav_li>a{
+    color: #00cc99;
+    text-decoration:none;
+}
+.underline{
+    opacity: 1;
+    height: 4px;
+    width: 100%;
+}
+.nav_li>a:hover{
+    color: rgb(161, 223, 199);
+}
+.nav_li>a:hover .underline{
+    opacity: 1;
+    transition: all 0.1s ease;
+    transform:translate(0px, 22px);
+    height: 4px;
+    width: 100%;
+    background-color: #00cc99;
+}
+
+/*---------------------------------------- front img ----------------------------------------*/
+.frontIMG{
+  position: relative;
+  z-index:10;
+  display: flex;
+  justify-content: center;            
+  align-items: center;   
+}
+.frontWord-bg{
+    width: 100%;
+    height: 15vw;
+    position: absolute;
+    z-index:11;
+    background-color: black;
+    opacity: 0.1;
+}
+.frontWord{
+    position: absolute;
+    z-index:12;
+    left: 0%;
+    text-align: left;
+    color: white;
+    padding: 4%;
+    font-size: 4em;
+    font-weight: 400;
+}
+
+/*---------------------------------------- block 1 ----------------------------------------*/
+.block1_ul{
+    align-self: center; 
+    justify-self: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.card {
+    align-self: center; 
+    justify-self: center;
+    display: grid;
+    grid-auto-rows: 50%;
+    width: 75%;
+    height: 90%;
+    /* height: auto; */
+    padding: 40px 20px ;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.cardimg{
+    align-self: center; 
+    justify-self: center;
+    max-height: 90%;
+    max-width: 90%;
+}
+.block1_ul_title{
+    padding: 3%;
+    font-size: 1.5em;
+    text-align: center;
+}
+.block1_ul_content{
+    text-align: left;
+    font-size: 1.1em;
+    letter-spacing: 0.1em;
+    line-height: 1.5em;
+}
+.jqueryul>li{
+    margin-left: 1em;
+    list-style-type:disc;
+}
+.block1_ul_content_hovercontent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(31, 31, 31, 0.85);
+    height: 200%;
+    width: 100%;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: all 0.3s ease;
+    cursor:pointer;
+}
+.block1_ul_content_hovercontent *{
+    transform: translateY(-70px);
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+.block1_ul_content_hovercontent > h2{
+    color: white;
+    font-size: 2.5em;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    line-height: 1.5em;
+}
+.card:hover > .block1_ul_content_hovercontent{
+    opacity: 1;
+}
+
+.card:hover .block1_ul_content_hovercontent *{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/*---------------------------------------- block 2 ----------------------------------------*/
+#block2_title{
+    align-self: center; 
+    justify-self: center;
+    font-size: 2em;
+    margin-bottom: 2.5vw;
+}
+.block2_table{
+    align-self: center; 
+    justify-self: center;
+    width: 80%;
+}
+.block2_table_thead{
+    font-weight: 500;
+    background-color: rgba(203, 203, 203, 0.269);
+}
+.block2_table_tbody{
+    font-weight: 400;
+}
+.block2_table tr{
+    border-top:1px #cbcbcb solid;border-bottom:1px #cbcbcb solid;
+}
+.block2_table td{
+    text-align: left;
+    line-height: 2em;
+    font-size: 1.25em;
+}
+.block2_table h3 ,.block2_table p {
+    margin-left: 1.5em;
+}
+.wordGreen{
+    color: #00cc99;
+}
+.td_2{
+    width: 30%;
+}
+
+/*---------------------------------------- block 3 ----------------------------------------*/
+#block3{
+    background: linear-gradient(#01644b,#009671);
+}
+#block3_title{
+    font-size: 2em;
+    color: white;
+    padding: 1em;
+    letter-spacing: 0.1em;
+    line-height: 1.5em;
+}
+.block3_form{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    margin-bottom: 2vw;
+}
+#block3_from_textarea{
+    align-self: center; 
+    justify-self: center;
+    width:90%;
+    height: 100%;
+}
+.block3_form_inputdiv{
+    margin-bottom: 3%;
+}
+.block3_form_inputdiv label{
+    display: block;
+    color: white;
+    font-size: 1.25em;
+    font-weight: 500;
+    text-align: left;
+    margin-left: 5%;
+    margin-bottom: 5px;
+}
+.block3_form_inputdiv input{
+    width: 90%;
+    height: 35px;
+}
+
+#block3_form_subbmit{
+    border:0 none;
+    cursor:pointer;
+    background-color: #00cc99;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 300;
+    width: 90px;
+    height: 40px;
+    float: right;
+    margin-right: 5%;
+}
+#block3_form_subbmit:hover{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+/*---------------------------------------- footer ----------------------------------------*/
+.footer{
+    height: 7vw; /*設定footer本身高度*/
+    padding: 2vw;
+}
+.footer_word_red{
+    color: red;
+}
+#footerimg{
+    width: 17%;
+}
+#footerword{
+    letter-spacing: 0.1em;
+    line-height: 1.5em;
+    float:right;
+    text-align:left;
+    font-size: 1.1em;
+}
+
+
