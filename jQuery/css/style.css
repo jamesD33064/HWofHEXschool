@@ -121,7 +121,7 @@ html, body {
     height: 4px;
     width: 100%;
 }
-.nav_li>a>h3:hover{
+.nav_li>a h3:hover{
     color: rgb(161, 223, 199);
 }
 .nav_li>a:hover .underline{
