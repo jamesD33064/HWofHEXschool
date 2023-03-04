@@ -31,9 +31,14 @@
                             <h3>首頁</h3><div class="underline"></div>
                         </a></li>
                         <li class="nav_li" id="nav_li_intro"><a>
-                            <h3>產品介紹</h3><div class="underline"></div>
+                            <h3>產品介紹<span id="nav_li_intro_toggle" class="toggle"></span></h3><div class="underline"></div>
+                            <ul class="dropdownmenu border_radius" style="display: none;">
+                                <li class="dropdownmenu_item border_radius"><p>HTML 5</p></li>
+                                <li class="dropdownmenu_item border_radius"><p>RWD</p></li>
+                                <li class="dropdownmenu_item border_radius"><p>jQuery</p></li>
+                            </ul>
                         </a></li>
-                        <li class="nav_li" id="nav_li_conn"><a>
+                        <li class="nav_li" id="nav_li_conn"><a href="#block3">
                             <h3>聯絡我們</h3><div class="underline"></div>
                         </a></li>
                     </ul>
@@ -73,27 +78,27 @@
 
             <div id="block1" class="contentblock blockmarginbuttom">
                 <ul class="block1_ul">
-                    <li class="card border-radius">
+                    <li class="card border_radius">
                         <img src="./img/html.png" class="cardimg">
                         <div class="block1_ul_content">
                             <h2 class="block1_ul_title">Html 5 基礎教學</h2>
                             <p>主流前端網站設計的基礎就在六角學院，在這裡不再是填鴨式教育，而是透過實際的範例，了解正確的網站開發流程，講師均具有業界開發經驗，讓學員學習業界主流的開發方法。</p>
                         </div>
                         <a href="./img/html.png" data-lightbox="block1_cardimggroup">
-                            <div class="block1_ul_content_hovercontent border-radius"><h2>Learn More</h2></div>
+                            <div class="block1_ul_content_hovercontent border_radius"><h2>Learn More</h2></div>
                         </a>
                     </li>
-                    <li class="card border-radius">
+                    <li class="card border_radius">
                         <img src="./img/rwd.png" class="cardimg">
                         <div class="block1_ul_content">
                             <h2 class="block1_ul_title">響應式網站設計</h2>
                             <p>響 應 式 網 站 設 計(Responsive web design)，目前大多使用者均是以手機瀏覽的情況下，響應式網站已經是必備的。六角學院將會提供業界響應式開發方法。讓學生了解行動版開發技巧。</p>
                         </div>
                         <a href="./img/rwd.png" data-lightbox="block1_cardimggroup">
-                            <div class="block1_ul_content_hovercontent border-radius"><h2>Learn More</h2></div>
+                            <div class="block1_ul_content_hovercontent border_radius"><h2>Learn More</h2></div>
                         </a>
                     </li>
-                    <li class="card border-radius">
+                    <li class="card border_radius">
                         <img src="./img/jQuery.png" class="cardimg">
                         <div class="block1_ul_content">
                             <h2 class="block1_ul_title">jQuery 實戰教學</h2>
@@ -106,7 +111,7 @@
                             </ul>
                         </div>
                         <a href="./img/jQuery.png" data-lightbox="block1_cardimggroup">
-                            <div class="block1_ul_content_hovercontent border-radius"><h2>Learn More</h2></div>
+                            <div class="block1_ul_content_hovercontent border_radius"><h2>Learn More</h2></div>
                         </a>
                     </li>
                 </ul>
@@ -167,22 +172,22 @@
             <div id="block3" class="contentblock ">
                 <h1 id="block3_title">對我們課程有興趣嗎<span class="crook">？</span><br>歡迎留下您的資料</h1>
                 <form action="" class="block3_form">
-                    <textarea id="block3_from_textarea" class="border-radius" name="" rows="" cols="" required></textarea>
+                    <textarea id="block3_from_textarea" class="border_radius" name="" rows="" cols="" required></textarea>
                     <div>
                         <div class="block3_form_inputdiv">
                             <label for="name">姓名</label>
-                            <input class="border-radius" type="text" name="name" placeholder="六角講師" required>
+                            <input class="border_radius" type="text" name="name" placeholder="六角講師" required>
                         </div>
                         <div class="block3_form_inputdiv">
                             <label for="phone">電話</label>
-                            <input class="border-radius" type="text" name="phone" placeholder="0912345678" required>
+                            <input class="border_radius" type="text" name="phone" placeholder="0912345678" required>
                         </div>
                         <div class="block3_form_inputdiv">
                             <label for="email">信箱</label>
-                            <input class="border-radius" type="email" name="email" placeholder="hexschool@gmail.com" required>
+                            <input class="border_radius" type="email" name="email" placeholder="hexschool@gmail.com" required>
                         </div>
                         <div >
-                            <input id="block3_form_subbmit" class="border-radius" type="submit" value="送出">
+                            <input id="block3_form_subbmit" class="border_radius" type="submit" value="送出">
                         </div>
                     </div>
                 </form>

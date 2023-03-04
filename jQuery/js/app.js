@@ -1,8 +1,19 @@
+var rotate = 180;
 $(document).ready(function(){
     /*---------------------------------------- dropdown menu ----------------------------------------*/
-    $('.nav_li').click(function(event){
+    $('#nav_li_intro > a').click(function(event){
         event.preventDefault();
-        $('.nav_li .dropdown').toggle();
+        $('#nav_li_intro > a .dropdownmenu').toggle();
+        $('#nav_li_intro_toggle').animate(
+            { deg: rotate },
+            {
+                duration: 300,
+                step: function(now) {
+                    $(this).css({ transform: 'rotate(' + now + 'deg)' });
+                }
+            }
+        );
+        rotate+=180;
     });
 
     /*---------------------------------------- to top ----------------------------------------*/

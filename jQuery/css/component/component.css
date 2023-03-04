@@ -9,3 +9,52 @@
     width: 5vw;
     cursor:pointer;
 }
+
+/*---------------------------------------- dropdwon menu ----------------------------------------*/
+.dropdownmenu{
+    transform:translate(0px, 2px);
+    width: fit-content;
+    background-color: white;
+    display: grid;
+    position: absolute;
+    z-index: 10;
+}
+.dropdownmenu_item{
+    width: 100%;
+    display: grid;
+    color: black;
+    height: 2em;
+    font-size: 0.8em;
+    letter-spacing: 0.1em;
+    line-height: 1.5em;
+}
+.dropdownmenu_item > p{
+    margin: 0 1em;
+}
+.dropdownmenu_item:hover{
+    width: 100%;
+    margin-left: 0.4em;
+    transition: all 0.1s ease;
+    background-color:  #f6f6f6;
+    overflow: hidden;
+    font-weight: 500;
+}
+.toggle {
+    width: auto;
+    height: auto;
+    margin-left: 0.5em;
+    color: #00cc99;
+    font-weight: 700;
+    display: inline-grid;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.toggle::after {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-width: 0 3px 3px 0;
+    border-style: solid;
+    transform: rotate(45deg);
+}
