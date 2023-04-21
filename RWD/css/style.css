@@ -1,51 +1,3 @@
-/*---------------------------------------- css reset ----------------------------------------*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-/* setup */
-:root {
-    --font-size: 14px;
-}
 /*---------------------------------------- header_img ----------------------------------------*/
 .front_page{
     display: flex;
@@ -60,14 +12,19 @@ table {
     justify-self: center;
     align-self: center;
     background-color: black;
-    max-width: 40%;
-    width: calc(var(--font-size)*50);
-    height: calc(var(--font-size)*15);
+    /* max-width: 40%; */
+    /* width: calc(var(--font-size)*60);
+    height: calc(var(--font-size)*15); */
     opacity: 0.3;
 }
 
-.header_img{
+.header_desktop_img{
+    display: block;
     width: 100vw;
+}
+
+.header_mobile_img{
+    display: none;
 }
 
 .front_page_text{
@@ -77,11 +34,87 @@ table {
 }
 
 .front_page_title{
-    font-size: calc(var(--font-size)*4);
-    font-weight: 100;
+    font-size: 2rem;
     padding: 16px;
 }
-
-.front_page_content{
-    font-size: calc(var(--font-size)*1.5);
+.mobile_br{
+    display: none;
 }
+
+@media screen and (max-width: 676px) {
+    .front_page_title{
+        font-size: 2.5rem;
+        padding: 16px;
+    }
+    .mobile_br{
+        display: block;
+    }
+    .front_page_content{
+        font-size: 1.5rem;
+    }
+    .header_desktop_img{
+        display: none;
+    }
+    .header_img{
+        /* width: 100vw; */
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+    }
+    .header_mobile_img{
+        display: block;
+        height: 60vh;
+    }
+}
+
+/*---------------------------------------- block 1 ----------------------------------------*/
+#block_1{
+    background-color: #EFE9E7;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 5vw;
+}
+
+.block_1_card {
+    display: grid;
+    justify-items: center;
+    padding:20px;
+}
+.block1_img{
+    width: 100%;
+    border-radius: 1000px;
+}
+.block1_card_header{
+    padding: 1rem;
+    color: #3D1101;
+}
+
+.block1_card_body{
+    color: #3D1101;
+}
+
+@media screen and (max-width: 480px) {
+    #block_1{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(3,1fr);
+    }
+
+    .block1_img{
+        width: 80%;
+        border-radius: 1000px;
+    }
+}
+
+/*---------------------------------------- block 2 ----------------------------------------*/
+
+#block_2{
+    background-color: #3D1101;
+}
+.block_2_img{
+    width: 100%;
+}
+
+
+
+

@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HW of RWD</title>
+
+    <link rel="stylesheet" href="./css/CSSreset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/navbar.css">
 </head>
@@ -16,19 +18,19 @@
             <script>
                 var menu_toggle_state = false
                 function click_menu_toggle() {
-                    if(!menu_toggle_state){
+                    if (!menu_toggle_state) {
                         document.querySelector(".navbar").classList.remove('show_navbar');
                         document.querySelector(".menu_toggle").classList.remove('menu_toggle_active');
-                        menu_toggle_state=!menu_toggle_state;
+                        menu_toggle_state = !menu_toggle_state;
                     }
-                    else{
+                    else {
                         document.querySelector(".navbar").classList.add('show_navbar');
                         document.querySelector(".menu_toggle").classList.add('menu_toggle_active');
-                        menu_toggle_state=!menu_toggle_state;
+                        menu_toggle_state = !menu_toggle_state;
                     }
                 }
             </script>
-            
+
             <div class="header">
                 <div class="logo">
                     <h1 class="company_logo"><img src="./img/logo_w@svg.svg" alt=""></h1>
@@ -47,9 +49,12 @@
             </div>
 
             <div class="front_page">
-                <img src="./img/header_desktop.png" alt="" class="header_img">
+                <div class="header_img">
+                    <img src="./img/header_desktop.png" alt="" class="header_desktop_img">
+                    <img src="./img/header_mobile.png" alt="" class="header_mobile_img">
+                </div>
                 <div class="front_page_text">
-                    <h1 class="front_page_title">咬一口就無法忘懷的漢堡</h1>
+                    <h1 class="front_page_title">咬一口<br class="mobile_br">就無法忘懷的漢堡</h1>
                     <p class="front_page_content">
                         七夕絕對無法錯過的好滋味<br>
                         六角大漢堡
@@ -58,6 +63,48 @@
             </div>
         </header>
 
+        <div id="block_1">
+            <div class="block_1_card">
+                <img src="./img/feature_1.png" alt="" class="block1_img">
+                <div class="block1_card_header">
+                    <h1>台灣本土蔬菜</h1>
+                </div>
+                <div class="block1_card_body">
+                    <p>
+                        In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et
+                        elit eget elit facilisis tristique. Nam vel iaculis mauris.
+                    </p>
+                </div>
+            </div>
+            <div class="block_1_card">
+                <img src="./img/feature_2.png" alt="" class="block1_img">
+                <div class="block1_card_header">
+                    <h1>專業米其林廚師</h1>
+                </div>
+                <div class="block1_card_body">
+                    <p>
+                        In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et
+                        elit eget elit facilisis tristique. Nam vel iaculis mauris.
+                    </p>
+                </div>
+            </div>
+            <div class="block_1_card">
+                <img src="./img/feature_3.png" alt="" class="block1_img">
+                <div class="block1_card_header">
+                    <h1>對於專業不能退讓</h1>
+                </div>
+                <div class="block1_card_body">
+                    <p>
+                        In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et
+                        elit eget elit facilisis tristique. Nam vel iaculis mauris.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="block_2">
+            <img src="./img/main_chef_brown.png" alt="" class="block_2_img">
+        </div>
 
 
     </div>
