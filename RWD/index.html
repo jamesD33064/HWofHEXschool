@@ -7,29 +7,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HW of RWD</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/navbar.css">
 </head>
 
 <body>
     <div class="wrap">
         <header>
-            <nav class="navbar">
-                <div class="nav_left">
+            <script>
+                var menu_toggle_state = false
+                function click_menu_toggle() {
+                    if(!menu_toggle_state){
+                        document.querySelector(".navbar").classList.remove('show_navbar');
+                        document.querySelector(".menu_toggle").classList.remove('menu_toggle_active');
+                        menu_toggle_state=!menu_toggle_state;
+                    }
+                    else{
+                        document.querySelector(".navbar").classList.add('show_navbar');
+                        document.querySelector(".menu_toggle").classList.add('menu_toggle_active');
+                        menu_toggle_state=!menu_toggle_state;
+                    }
+                }
+            </script>
+            
+            <div class="header">
+                <div class="logo">
                     <h1 class="company_logo"><img src="./img/logo_w@svg.svg" alt=""></h1>
                 </div>
-                <div class="nav_right">
+                <nav class="navbar">
                     <ul class="nav_items">
-                        <li class="nav_item">
-                            <a href="#" class="nav_link">特色</a>
-                        </li>
-                        <li class="nav_item">
-                            <a href="#" class="nav_link">主廚</a>
-                        </li>
-                        <li class="nav_item">
-                            <a href="#" class="nav_link">地圖</a>
-                        </li>
+                        <li class="nav_item"><a href="#" class="nav_link">特色</a></li>
+                        <li class="nav_item"><a href="#" class="nav_link">主廚</a></li>
+                        <li class="nav_item"><a href="#" class="nav_link">地圖</a></li>
                     </ul>
+                </nav>
+
+                <div class="menu_toggle" onclick="click_menu_toggle()">
+                    <span class="menu_toggle_center"></span>
                 </div>
-            </nav>
+            </div>
+
             <div class="front_page">
                 <img src="./img/header_desktop.png" alt="" class="header_img">
                 <div class="front_page_text">

@@ -42,29 +42,9 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/*---------------------------------------- nav ----------------------------------------*/
-.navbar {
-    width: 100vw;
-    height: 56px;
-    background-color: black;
-    display: flex;
-    justify-content: space-between;
-}
-
-.nav_left, .nav_right {
-    padding: 0 42px;
-    align-self: center;
-}
-
-.nav_items {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 31px;
-}
-
-.nav_link{
-    color: #ffffff;
-    text-decoration: none;
+/* setup */
+:root {
+    --font-size: 14px;
 }
 /*---------------------------------------- header_img ----------------------------------------*/
 .front_page{
@@ -81,8 +61,8 @@ table {
     align-self: center;
     background-color: black;
     max-width: 40%;
-    width: 40rem;
-    height: 15rem;
+    width: calc(var(--font-size)*50);
+    height: calc(var(--font-size)*15);
     opacity: 0.3;
 }
 
@@ -97,13 +77,11 @@ table {
 }
 
 .front_page_title{
-    font-size: 2.5rem;
+    font-size: calc(var(--font-size)*4);
     font-weight: 100;
+    padding: 16px;
 }
 
 .front_page_content{
-    padding: 16px 0;
+    font-size: calc(var(--font-size)*1.5);
 }
-
-
-
