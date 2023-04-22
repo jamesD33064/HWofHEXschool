@@ -80,18 +80,18 @@
 }
 
 /*---------------------------------------- block 1 ----------------------------------------*/
-#block_1 {
+#block1 {
     background-color: #EFE9E7;
     padding: 50px 0;
     display: grid;
 }
 
-.block_1_title {
+.block1_title {
     justify-self: center;
     display: flex;
 }
 
-.block_1_title>h1 {
+.block1_title>h1 {
     display: inline-block;
     color: #3D1101;
 
@@ -103,7 +103,7 @@
     font-weight: 300;
 }
 
-.block_1_title_line {
+.block1_title_line {
     align-self: center;
     display: inline-block;
     width: 100px;
@@ -111,12 +111,12 @@
     background-color: #3D1101;
 }
 
-.block_1_feature {
+.block1_feature {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 
-.block_1_card {
+.block1_card {
     display: grid;
     justify-items: center;
     padding: 10%;
@@ -145,27 +145,27 @@
 }
 
 @media screen and (max-width: 768px) {
-    .block_1_title {
+    .block1_title {
         margin-bottom: 50px;
     }
 
-    .block_1_title>h1 {
+    .block1_title>h1 {
         font-size: 1.5rem;
         line-height: 2rem;
         letter-spacing: 0.1rem;
     }
 
-    .block_1_title_line {
+    .block1_title_line {
         display: none;
     }
 
-    .block_1_feature {
+    .block1_feature {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(3, 1fr);
     }
 
-    .block_1_card {
+    .block1_card {
         padding: 0 10%;
     }
 
@@ -186,62 +186,80 @@
 }
 
 /*---------------------------------------- block 2 ----------------------------------------*/
-#block_2 {
+#block2 {
     background-color: #3D1101;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
 
-.block_2_img_frame {
+.block2_img_frame {
     max-width: 470px;
     max-height: 100%;
     justify-self: end;
     overflow: hidden;
 }
 
-.block_2_img {
+.block2_img {
     height: 100%;
 }
 
-.block_2_content {
+.block2_content {
     padding: 10% 25px;
     color: #ffffff;
     font-weight: 300;
     line-height: 1.3rem;
 }
 
-.block_2_content_title {
+.block2_content_title {
     font-size: 1.25rem;
 }
 
-.block_2_content_text {
+.block2_content_text {
     margin-top: 5%;
 }
 
 @media screen and (max-width: 768px) {
-    #block_2 {
+    #block2 {
         grid-template-columns: 1fr;
     }
 
-    .block_2_img_frame {
+    .block2_img_frame {
         justify-self: center;
         width: 100%;
     }
 
-    .block_2_img {
+    .block2_img {
         width: 100%;
     }
 
-    .block_2_content {
+    .block2_content {
         padding: 8% 10%;
     }
 
-    .block_2_content_title {
+    .block2_content_title {
         margin-top: 5%;
     }
 }
 
-/*---------------------------------------- block 2 ----------------------------------------*/
-#block_3 {
+/*---------------------------------------- block 3 ----------------------------------------*/
+#block3 {
+    background-color: #EFE9E7;
+    padding: 50px 0;
+}
+.block3_feature{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.block3_card {
+    display: grid;
+    justify-items: center;
+    padding: 10%;
+}
+.block3_img{
+    border-radius: 100px;
+}
+
+/*---------------------------------------- block 3 ----------------------------------------*/
+#block_4 {
     height: 50vw;
 }
