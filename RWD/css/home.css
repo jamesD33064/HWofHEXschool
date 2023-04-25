@@ -196,8 +196,8 @@
     display: grid;
     /* justify-items: center; */
     padding: 5%;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
 }
 
 .block3_img {
@@ -210,20 +210,22 @@
     align-self: center;
 }
 
-.block3_card_header{
+.block3_card_header {
     display: flex;
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 1;
 }
-.block3_card_header > h1{
+
+.block3_card_header>h1 {
     display: flex;
     align-self: center;
     margin-left: 5%;
     color: #3D1101;
 }
-.block3_card_body{
+
+.block3_card_body {
     grid-column-start: 2;
     grid-column-end: 5;
     grid-row-start: 2;
@@ -232,7 +234,8 @@
     margin-left: 5%;
     color: #3D1101;
 }
-.block3_card_footer{
+
+.block3_card_footer {
     grid-column-start: 1;
     grid-column-end: 5;
     grid-row-start: 4;
@@ -270,69 +273,74 @@
     font-weight: 300;
 }
 
-.block4_content{
+.block4_content {
     padding: 0 5%;
     margin-top: 3%;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     column-gap: 20px;
 }
-.block4_img{
+
+.block4_img {
     width: 100%;
 }
-#block4_form{
+
+#block4_form {
     display: grid;
-    grid-template-rows: repeat(6,1fr);
+    grid-template-rows: repeat(6, 1fr);
     row-gap: 3%;
 }
-.block4_inputbox{
+
+.block4_inputbox {
     display: flex;
     flex-direction: column;
     color: #3D1101;
 }
 
-.block4_inputbox input[type="text"], 
+.block4_inputbox input[type="text"],
 .block4_inputbox input[type="email"],
 .block4_inputbox input[type="number"],
 .block4_inputbox input[type="tel"],
-.block4_radio{
+.block4_radio {
     margin-top: 2%;
     height: 100%;
-    border-style:solid;
+    border-style: solid;
     border-color: #D2D2D2;
-    border-width:1px;
+    border-width: 1px;
     border-radius: 4px;
 }
-.block4_radio{
-    border-style:none;
+
+.block4_radio {
+    border-style: none;
 }
 
-.block4_inputbox span input{
+.block4_inputbox span input {
     margin-right: 8%;
 }
 
-#block4_btnblock{
+#block4_btnblock {
     display: flex;
     justify-content: end;
     align-items: end;
 }
 
-#block4_btn_cancel, #block4_btn_submit{
-    height:32px;
+#block4_btn_cancel,
+#block4_btn_submit {
+    height: 32px;
     width: 70px;
     margin-right: 11px;
-    border-style:none;
+    border-style: none;
     border-radius: 4px;
     color: #ffffff;
 }
-#block4_btn_cancel{
+
+#block4_btn_cancel {
     background-color: #A09E9E;
 }
-#block4_btn_submit{
+
+#block4_btn_submit {
     background-color: #F56B22;
 }
-
-
 
 @media screen and (max-width: 768px) {
     .block4_content {
