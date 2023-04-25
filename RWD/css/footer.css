@@ -1,0 +1,12 @@
+/*---------------------------------------- block 5 ----------------------------------------*/
+footer {
+    padding: 5%;
+    background-color: #EFE9E7;
+    display: flex;
+}
+.footer_card{
+    display: grid;
+}
+.footer_card_title{
+    font-size: 2rem;
+}

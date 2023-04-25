@@ -5,11 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HW of RWD</title>
+    <title>HOME</title>
 
     <link rel="stylesheet" href="./css/CSSreset.css">
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+
+    <link rel="stylesheet" href="./css/home.css">
 </head>
 
 <body>
@@ -191,39 +194,67 @@
 
                 <form action="#" id="block4_form">
 
-                    <div class="inputbox">
-                        <label for="UserName">姓名</label><br>
+                    <div class="block4_inputbox">
+                        <label for="UserName">姓名</label>
                         <input type="text" id="UserName" placeholder="六角講師吃尾牙">
                     </div>
-                    <div class="inputbox">
-                        <label for="UserPhone">電話</label><br>
+                    <div class="block4_inputbox">
+                        <label for="UserPhone">電話</label>
                         <input type="tel" id="UserPhone" placeholder="02-1234567">
                     </div>
-                    <div class="inputbox">
-                        <label for="UserEmail">信箱</label><br>
+                    <div class="block4_inputbox">
+                        <label for="UserEmail">信箱</label>
                         <input type="email" id="UserEmail" placeholder="test@gmail.com">
                     </div>
-                    <div class="inputbox">
-                        <label for="NumofPeople">人數</label><br>
+                    <div class="block4_inputbox">
+                        <label for="NumofPeople">人數</label>
                         <input type="number" id="UserEmail">
                     </div>
-                    <div class="inputbox">
+                    <div class="block4_inputbox">
                         <p>是否需要素食</p>
-                        <label for="VEG_N">是</label>
-                        <input type="radio" id="VEG_N" name="NeedVegetarian" value="VEG_N">
-                        <label for="VEG_Y">否</label>
-                        <input type="radio" id="VEG_Y" name="NeedVegetarian" value="VEG_Y">
+                        <span class="block4_radio">
+                            <label for="VEG_N">是</label>
+                            <input type="radio" id="VEG_N" name="NeedVegetarian" value="VEG_N" checked>
+                            <label for="VEG_Y">否</label>
+                            <input type="radio" id="VEG_Y" name="NeedVegetarian" value="VEG_Y">
+                        </span>
                     </div>
 
-                    <input type="submit" value="Submit">
+                    <div id="block4_btnblock">
+                        <input id="block4_btn_cancel" type="button" value="取消">
+                        <input id="block4_btn_submit" type="submit" value="送出">
+                    </div>
                 </form>
             </div>
         </div>
 
 
-        <div id="block_5">
+        <footer>
+            <div class="footer_card">
+                <h1 class="footer_card_title">關於六角西餐廳</h1>
+                <p>
+                    Curabitur lobortis id lorem id bibndum. Ut id consectetur magna. Quisque volutpat augue enim,
+                    pulvinar lobortis nibh lacinia at.
+                </p>
+            </div>
+            <div class="footer_card">
+                <h1 class="footer_card_title">聯絡方式</h1>
+                <ul>
+                    <li>高雄市中正五路到底</li>
+                    <li>+886 886 886</li>
+                    <li>service@hexschool.com</li>
+                </ul>
+            </div>
+            <div class="footer_logo">
+                <h1>六角西餐廳</h1>
+                <ul>
+                    <li><img src="./img/" alt=""></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </footer>
 
-        </div>
 
     </div>
 </body>
