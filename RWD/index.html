@@ -22,15 +22,14 @@
                 var menu_toggle_state = false
                 function click_menu_toggle() {
                     if (!menu_toggle_state) {
-                        document.querySelector(".navbar").classList.remove('show_navbar');
-                        document.querySelector(".menu_toggle").classList.remove('menu_toggle_active');
-                        menu_toggle_state = !menu_toggle_state;
-                    }
-                    else {
                         document.querySelector(".navbar").classList.add('show_navbar');
                         document.querySelector(".menu_toggle").classList.add('menu_toggle_active');
-                        menu_toggle_state = !menu_toggle_state;
                     }
+                    else {
+                        document.querySelector(".navbar").classList.remove('show_navbar');
+                        document.querySelector(".menu_toggle").classList.remove('menu_toggle_active');
+                    }
+                    menu_toggle_state = !menu_toggle_state;
                 }
             </script>
 
@@ -40,9 +39,9 @@
                 </div>
                 <nav class="navbar">
                     <ul class="nav_items">
-                        <li class="nav_item"><a href="#" class="nav_link">特色</a></li>
-                        <li class="nav_item"><a href="#" class="nav_link">主廚</a></li>
-                        <li class="nav_item"><a href="#" class="nav_link">地圖</a></li>
+                        <li class="nav_item"><a href="#block1" class="nav_link">特色</a></li>
+                        <li class="nav_item"><a href="#block2" class="nav_link">主廚</a></li>
+                        <li class="nav_item"><a href="#block4" class="nav_link">地圖</a></li>
                     </ul>
                 </nav>
                 <div class="menu_toggle" onclick="click_menu_toggle()">
@@ -185,7 +184,7 @@
             </div>
         </div>
 
-        <div id="block_4">
+        <div id="block4">
             <div class="block4_title">
                 <h1>我們的位置不太夠坐<br>要不要先訂位呢？</h1>
             </div>
