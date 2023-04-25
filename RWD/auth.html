@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUTH</title>
+
+    <link rel="stylesheet" href="./css/CSSreset.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+
+    <link rel="stylesheet" href="./css/auth.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <script>
+                var menu_toggle_state = false
+                function click_menu_toggle() {
+                    if (!menu_toggle_state) {
+                        document.querySelector(".navbar").classList.add('show_navbar');
+                        document.querySelector(".menu_toggle").classList.add('menu_toggle_active');
+                    }
+                    else {
+                        document.querySelector(".navbar").classList.remove('show_navbar');
+                        document.querySelector(".menu_toggle").classList.remove('menu_toggle_active');
+                    }
+                    menu_toggle_state = !menu_toggle_state;
+                }
+            </script>
+
+            <div class="header">
+                <div class="logo">
+                    <h1 class="company_logo"><a href="./index.html"><img src="./img/logo_w@svg.svg" alt=""></a></h1>
+                </div>
+                <nav class="navbar">
+                    <ul class="nav_items">
+                        <li class="nav_item"><a href="./menu.html" class="nav_link">菜單</a></li>
+                        <li class="nav_item"><a href="./auth.html" class="nav_link">登入註冊</a></li>
+                    </ul>
+                </nav>
+                <div class="menu_toggle" onclick="click_menu_toggle()">
+                    <span class="menu_toggle_center"></span>
+                </div>
+            </div>
+            <div class="front_page">
+                <div class="header_img">
+                    <img src="./img/header_desktop.png" alt="" class="header_desktop_img">
+                    <img src="./img/header_mobile.png" alt="" class="header_mobile_img">
+                </div>
+                <div class="front_page_text">
+                    <h1 class="front_page_title">咬一口<br class="mobile_br">就無法忘懷的漢堡</h1>
+                    <p class="front_page_content">
+                        七夕絕對無法錯過的好滋味<br>
+                        六角大漢堡
+                    </p>
+                </div>
+            </div>
+        </header>
+
+        <div class="content">
+            
+            <div class="slogan">
+                <h1>六角西餐廳</h1>
+                <h3>享受美食好味道</h3>
+            </div>
+
+            <div class="login">
+                <h2 class="active"> sign in </h2>
+                <h2 class="nonactive"> sign up </h2>
+
+                <form>
+                    <input type="email" class="text" name="email">
+                    <span>Email Address</span><br><br>
+
+                    <input type="password" class="text" name="password">
+                    <span>password</span><br>
+
+                    <a href="#">Forgot Password?</a>
+                    <button class="signin">Sign In</button>
+                </form>
+
+            </div>
+
+        </div>
+
+
+        <footer>
+            <div class="footer_information">
+                <div class="footer_card">
+                    <h1 class="footer_card_title">關於六角西餐廳</h1>
+                    <p class="footer_card_content">
+                        Curabitur lobortis id lorem id bibndum. Ut id consectetur magna. Quisque volutpat augue enim,
+                        pulvinar lobortis nibh lacinia at.
+                    </p>
+                </div>
+                <div class="footer_card">
+                    <h1 class="footer_card_title">聯絡方式</h1>
+                    <ul class="footer_card_content">
+                        <li><span class="li_disc"></span>高雄市中正五路到底</li>
+                        <li><span class="li_disc"></span>+886 886 886</li>
+                        <li><span class="li_disc"></span>service@hexschool.com</li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="footer_logo">
+                <h1 class="footer_logo_title">六角西餐廳</h1>
+                <ul class="footer_logo_link">
+                    <li><img src="./img/google.png" alt=""></li>
+                    <li><img src="./img/twitter.png" alt=""></li>
+                    <li><img src="./img/facebook.png" alt=""></li>
+                </ul>
+            </div>
+        </footer>
+
+
+    </div>
+</body>
+
+</html>
