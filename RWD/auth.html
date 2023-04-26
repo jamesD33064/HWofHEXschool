@@ -62,30 +62,46 @@
             </div>
         </header>
 
+        <script>
+            var AuthPageState = false;
+            function setAuthPageState(){
+                console.log(AuthPageState);
+                if(AuthPageState){
+                    document.getElementById("auth_signin").className = "active";
+                    document.getElementById("auth_signup").className ="nonactive";
+                    document.getElementById("btn_submit").textContent = "Sign In"
+                }
+                else{
+                    document.getElementById("auth_signin").className = "nonactive";
+                    document.getElementById("auth_signup").className = "active";
+                    document.getElementById("btn_submit").textContent = "Sign UP"
+                }
+                AuthPageState = !AuthPageState;
+            }
+
+        </script>
+
         <div class="content">
-            
             <div class="slogan">
                 <h1>六角西餐廳</h1>
                 <h3>享受美食好味道</h3>
             </div>
-
             <div class="login">
-                <h2 class="active"> sign in </h2>
-                <h2 class="nonactive"> sign up </h2>
-
+                <div id="AuthPageState" class="AuthPageState">
+                    <h2 id="auth_signin" class="active" onclick="setAuthPageState()"> sign in </h2>
+                    <h2 id="auth_signup" class="nonactive" onclick="setAuthPageState()"> sign up </h2>
+                </div>
                 <form>
-                    <input type="email" class="text" name="email">
+                    <input type="email" class="input_text" name="email">
                     <span>Email Address</span><br><br>
 
-                    <input type="password" class="text" name="password">
+                    <input type="password" class="input_text" name="password">
                     <span>password</span><br>
 
                     <a href="#">Forgot Password?</a>
-                    <button class="signin">Sign In</button>
+                    <button id="btn_submit" class="signin">Sign In</button>
                 </form>
-
             </div>
-
         </div>
 
 
